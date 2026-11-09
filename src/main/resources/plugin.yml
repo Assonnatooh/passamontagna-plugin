@@ -1,0 +1,20 @@
+name: Passamontagna
+version: 1.0.0
+main: it.assonnatooh.passamontagna.PassamontagnaPlugin
+api-version: '1.21'
+author: Assonnatooh
+description: Passamontagna che rende anonimo chi lo indossa.
+
+commands:
+  passamontagna:
+    description: Ottieni il passamontagna.
+    usage: /passamontagna get
+    permission: passamontagna.get
+
+permissions:
+  passamontagna.get:
+    description: Permette di ottenere il passamontagna.
+    default: true
+  passamontagna.staff:
+    description: Permette di vedere il nome reale di chi indossa il passamontagna.
+    default: op
